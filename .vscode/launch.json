@@ -1,0 +1,40 @@
+{
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:Jazz}/apps/macos",
+      "name": "Debug OpenClaw (apps/macos)",
+      "program": "${workspaceFolder:Jazz}/apps/macos/.build/debug/OpenClaw",
+      "preLaunchTask": "swift: Build Debug OpenClaw (apps/macos)"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:Jazz}/apps/macos",
+      "name": "Release OpenClaw (apps/macos)",
+      "program": "${workspaceFolder:Jazz}/apps/macos/.build/release/OpenClaw",
+      "preLaunchTask": "swift: Build Release OpenClaw (apps/macos)"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:Jazz}/apps/macos",
+      "name": "Debug openclaw-mac (apps/macos)",
+      "program": "${workspaceFolder:Jazz}/apps/macos/.build/debug/openclaw-mac",
+      "preLaunchTask": "swift: Build Debug openclaw-mac (apps/macos)"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:Jazz}/apps/macos",
+      "name": "Release openclaw-mac (apps/macos)",
+      "program": "${workspaceFolder:Jazz}/apps/macos/.build/release/openclaw-mac",
+      "preLaunchTask": "swift: Build Release openclaw-mac (apps/macos)"
+    }
+  ]
+}

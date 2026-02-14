@@ -197,7 +197,7 @@ When the linked self number is also present in `allowFrom`, WhatsApp self-chat s
 
 - skip read receipts for self-chat turns
 - ignore mention-JID auto-trigger behavior that would otherwise ping yourself
-- if `messages.responsePrefix` is unset, self-chat replies default to `[{identity.name}]` or `[openclaw]`
+- if `messages.responsePrefix` is unset, self-chat replies use `[{identity.name}]` when set, otherwise no prefix
 
 ## Message normalization and context
 

@@ -166,6 +166,9 @@ async function loadWebMediaInternal(
   options: WebMediaOptions = {},
 ): Promise<WebMediaResult> {
   const { maxBytes, optimizeImages = true, ssrfPolicy, localRoots } = options;
+  if (mediaUrl.startsWith("MEDIA:")) {
+    mediaUrl = mediaUrl.substring(6);
+  }
   // Use fileURLToPath for proper handling of file:// URLs (handles file://localhost/path, etc.)
   if (mediaUrl.startsWith("file://")) {
     try {
